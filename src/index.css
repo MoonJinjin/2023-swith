@@ -11,3 +11,117 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;500;600;800&display=swap');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ImcreSoojin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes move-wheel {
+  0% {
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(1rem);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+
+  25% {
+      opacity: .25;
+  }
+
+  50% {
+      opacity: .5;
+  }
+
+  75% {
+      opacity: .75;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  
+  25% {
+      opacity: 0.8;
+  }
+
+  100% {
+      transform: scale(1);
+  }
+
+}
+
+.pulse:nth-child(3) {
+  transform: translate(45%, -40%);
+  max-width: 50rem;
+  right: 0%;
+  float: right;
+}
+
+.pulse:nth-child(2) {
+  transform: translate(-30%, 70%);
+  max-width: 55rem;
+  left: 0%;
+}
+
+.pulse:last-child {
+  transform: translate(167%, 60%);
+  max-width: 55rem;
+  left: 0%;
+  overflow-x: hidden;
+}
+
+.circle {
+  fill: #fcd121;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: pulse 3s cubic-bezier(.5, .5, 0, 1);
+  animation-iteration-count: infinite;
+}
+
+.circle:nth-child(2) {
+  fill: #0f0071;
+  animation: pulse 3s 0.75s cubic-bezier(.5, .5, 0, 1);
+  animation-iteration-count: infinite;
+}
+
+.circle:last-child {
+  fill: #fff8db;
+  animation: pulse 3s 1.5s cubic-bezier(.5, .5, 0, 1);
+  animation-iteration-count: infinite;
+}
