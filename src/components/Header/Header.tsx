@@ -53,19 +53,21 @@ const Header: React.FC = () => {
         <>
             <Container>
                 <SubContainer>
-                    <Logo src="logo_small.png" />
+                    <Link to='/swith' key={0} onClick={() => handleClick('/swith')}>
+                        <Logo src={process.env.PUBLIC_URL+"/img/logo_small.png"} />
+                    </Link>
                     <Navbar>
                         <ul style={{marginRight:'10px'}}>
-                            <Link to='/login' key={0} onClick={() => handleClick('/login')}>
+                            <Link to='/login' key={1} onClick={() => handleClick('/login')}>
                                 <Navli>MY PAGE</Navli>
                             </Link>
-                            <Link to='/timer' key={1} onClick={() => handleClick('/timer')}>
+                            <Link to='/swith/timer' key={2} onClick={() => handleClick('/swith/timer')}>
                                 <Navli>TIMER</Navli>
                             </Link>
-                            <Link to='/voca' key={2} onClick={() => handleClick('/voca')}>
+                            <Link to='/swith/voca' key={3} onClick={() => handleClick('/swith/voca')}>
                                 <Navli>STUDY</Navli>
                             </Link>
-                            <Link to='/' key={3} onClick={() => handleClick('/')}>
+                            <Link to='/swith' key={4} onClick={() => handleClick('/swith')}>
                                 <Navli>HOME</Navli>
                             </Link>
                         </ul>

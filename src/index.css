@@ -38,6 +38,11 @@ code {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes move-wheel {
   0% {
       opacity: 0;
@@ -124,4 +129,21 @@ code {
   fill: #fff8db;
   animation: pulse 3s 1.5s cubic-bezier(.5, .5, 0, 1);
   animation-iteration-count: infinite;
+}
+
+#title::placeholder {
+  color: white;
+}
+
+input:read-only {
+  border: none;
+  outline: none;
+}
+
+.ant-space-item:not(:last-child) {
+  width: 50%;
+}
+
+.ant-btn-primary {
+  background-color: #fcd121 !important;
 }

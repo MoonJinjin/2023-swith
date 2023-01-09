@@ -4,27 +4,37 @@ import { theme } from '../styles/theme';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './MainPage/MainPage';
 import Header from './Header/Header';
+import Vocabulary from './Vocabulary/Vocabulary';
+import Footer from './Footer/Footer';
+import CreateVocabulary from './Vocabulary/CreateVocabulary';
+import Memorize from './Memorize/Memorize';
 
 const Container = styled.div`
   display: flex;
-  background-color: ${(props) => props.theme.colors.mainBackground};
 `;
 
 const Section = styled.section`
   width: 100%;
-  height: calc(100vh - 30px);
+  /* height: calc(100vh - 30px); */
+  height: 100vh;
 `;
 
 const AuthRoute: React.FC = () => {
   return (
-    <Container>
-      <Header />
-      <Section>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-      </Section>
-    </Container>
+    <>
+      <Container>
+        <Header />
+        <Section>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/voca" element={<Vocabulary />} />
+            <Route path="/makevoca" element={<CreateVocabulary />} />
+            <Route path="/memorize" element={<Memorize />} />
+          </Routes>
+        </Section>
+      </Container>
+      <Footer />
+    </>
   )
 }
 
@@ -34,7 +44,7 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Routes>
           {/* <Route path="/login" element={<LoginPage />} /> */}
-          <Route path="/" element={<AuthRoute />} />
+          <Route path="swith/*" element={<AuthRoute />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
