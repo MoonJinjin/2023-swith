@@ -18,8 +18,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://moonjinjin.github.io/2023-swith/",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
+    "gh-pages": "^4.0.0",
     "react-router-dom": "^6.6.1"
   }
 }
