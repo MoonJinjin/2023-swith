@@ -16,7 +16,8 @@ const Container = styled.div`
 const Section = styled.section`
   width: 100%;
   /* height: calc(100vh - 30px); */
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 `;
 
 const AuthRoute: React.FC = () => {

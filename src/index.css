@@ -147,3 +147,15 @@ input:read-only {
 .ant-btn-primary {
   background-color: #fcd121 !important;
 }
+
+.card {
+  display: none;
+}
+
+.active_card {
+  display: block;
+}
+
+.ant-card-body {
+  padding: 0 !important;
+}

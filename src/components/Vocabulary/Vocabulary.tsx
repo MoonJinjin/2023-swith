@@ -163,6 +163,30 @@ const Vocabulary: React.FC = () => {
                     word: "pencil",
                     meaning: "연필"
                 },
+                {
+                    word: "apple",
+                    meaning: "사과"
+                },
+                {
+                    word: "orange",
+                    meaning: "귤"
+                },
+                {
+                    word: "pencil",
+                    meaning: "연필"
+                },
+                {
+                    word: "apple",
+                    meaning: "사과"
+                },
+                {
+                    word: "orange",
+                    meaning: "귤"
+                },
+                {
+                    word: "pencil",
+                    meaning: "연필"
+                },
             ]
         },
     ]
