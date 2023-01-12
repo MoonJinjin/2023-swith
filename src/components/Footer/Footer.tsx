@@ -6,11 +6,18 @@ const Container = styled.div`
     align-items: center;
     clear: both;
     height: 100px;
+    position: absolute;
+    z-index: 3;
 `;
 
 const Logo = styled.img`
     margin-top: 35px;
     margin-left: 50px;
+    @media (max-width:1070px) {
+        width: 80px;
+        height: 20px;
+        margin-left: 30px;
+    }
 `;
 
 const Desc = styled.p`
@@ -18,6 +25,9 @@ const Desc = styled.p`
     float: right;
     margin-top: 35px;
     margin-right: 50px;
+    @media (max-width:1070px) {
+        margin-right: 30px;
+    }
 `;
 
 const Footer: React.FC = () => {

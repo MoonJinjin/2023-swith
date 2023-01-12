@@ -45,7 +45,7 @@ const App: React.FC = () => {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           {/* <Route path="/login" element={<LoginPage />} /> */}
-          <Route path="/swith/*" element={<AuthRoute />} />
+          <Route path="*" element={<AuthRoute />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -196,7 +196,7 @@ const Vocabulary: React.FC = () => {
             <Unit>
                 <UnitTitle>
                     <UnitFlag />
-                    <span style={{cursor:'pointer'}} onClick={()=> navigate("/swith/memorize", { state: { voca: value} }) }>{value.title}</span>
+                    <span style={{cursor:'pointer'}} onClick={()=> navigate("/memorize", { state: { voca: value} }) }>{value.title}</span>
                     <UnitLength>{value.words.length}카드</UnitLength>
                 </UnitTitle>
             </Unit>
@@ -218,7 +218,7 @@ const Vocabulary: React.FC = () => {
                         </ListLi>
                     </ListUl>
                     <New>
-                        <Link to='/swith/makevoca' key={0} onClick={() => handleClick('/swith/makevoca')}>+ 새로 만들기</Link>
+                        <Link to='/makevoca' key={0} onClick={() => handleClick('/makevoca')}>+ 새로 만들기</Link>
                     </New>
                     <ListUl style={{position:'absolute', bottom:'200px'}}>
                         <ListLi style={{marginTop:'25px'}}>

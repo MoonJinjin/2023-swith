@@ -37,7 +37,7 @@ const CreateVocabulary: React.FC = () => {
     
     const onFinish = (values: any) => {
         console.log('Received values of form:', values);
-        navigate("/swith/voca");
+        navigate("/voca");
     };
 
     return (

@@ -18,12 +18,20 @@ const SubContainer = styled.div`
     padding: 1rem;
     font-weight: bold;
     margin: auto;
+    @media (max-width:1070px) {
+        max-width: 1070px;
+    }
 `;
 
 const Logo = styled.img`
     width: 110px;
     height: 44px;
     margin-left: 100px;
+    @media (max-width:1070px) {
+        width: 90px;
+        height: 34px;
+        margin-left: 30px;
+    }
 `;
 
 const Navbar = styled.nav`
@@ -40,6 +48,9 @@ const Navli = styled.li`
     font-size: 20px;
     text-decoration: none;
     color: black;
+    @media (max-width:1070px) {
+        font-size: 14px;
+    }
 `;
 
 
@@ -53,7 +64,7 @@ const Header: React.FC = () => {
         <>
             <Container>
                 <SubContainer>
-                    <Link to='/swith' key={0} onClick={() => handleClick('/swith')}>
+                    <Link to='/' key={0} onClick={() => handleClick('/')}>
                         <Logo src={process.env.PUBLIC_URL+"/img/logo_small.png"} />
                     </Link>
                     <Navbar>
@@ -61,14 +72,11 @@ const Header: React.FC = () => {
                             <Link to='/login' key={1} onClick={() => handleClick('/login')}>
                                 <Navli>MY PAGE</Navli>
                             </Link>
-                            <Link to='/swith/timer' key={2} onClick={() => handleClick('/swith/timer')}>
+                            <Link to='/timer' key={2} onClick={() => handleClick('/timer')}>
                                 <Navli>TIMER</Navli>
                             </Link>
-                            <Link to='/swith/voca' key={3} onClick={() => handleClick('/swith/voca')}>
+                            <Link to='/voca' key={3} onClick={() => handleClick('/voca')}>
                                 <Navli>STUDY</Navli>
-                            </Link>
-                            <Link to='/swith' key={4} onClick={() => handleClick('/swith')}>
-                                <Navli>HOME</Navli>
                             </Link>
                         </ul>
                     </Navbar>

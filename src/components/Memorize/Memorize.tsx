@@ -110,8 +110,8 @@ const Memorize: React.FC = () => {
                         </a>
                     </Left>
                     <Right>
-                        <Button style={{margin: '0 5px'}} onClick={()=> navigate("/swith/card", { state: { voca: voca }} )}>카드 게임</Button>
-                        <Button style={{margin: '0 5px'}} onClick={()=> navigate("/swith/test", { state: { voca: voca }} )}>테스트</Button>
+                        <Button style={{margin: '0 5px'}} onClick={()=> navigate("/card", { state: { voca: voca }} )}>카드 게임</Button>
+                        <Button style={{margin: '0 5px'}} onClick={()=> navigate("/test", { state: { voca: voca }} )}>테스트</Button>
                     </Right>
                 </Title>
             </Header>
