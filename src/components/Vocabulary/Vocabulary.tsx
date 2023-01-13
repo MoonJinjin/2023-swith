@@ -27,6 +27,10 @@ const VocaList = styled.div`
     text-indent: 10px;
     border-right: 1.5px solid lightgray;
     left: 15%;
+    @media (max-width:532px) {
+        left: 0;
+        max-width: 200px;
+    }
 `;
 
 const ListUl = styled.ul`
@@ -38,6 +42,9 @@ const ListUl = styled.ul`
     padding-top: 100px;
     font-size: 25px;
     line-height: 29px;
+    @media (max-width:532px) {
+        font-size: 18px;
+    }
 `;
 
 const ListLi = styled.li`
@@ -52,6 +59,10 @@ const GroupTitle = styled.div`
     margin: 17px 0 17px 0;
     cursor: pointer;
     font-weight: bold;
+    @media (max-width:532px) {
+        margin: 12px 0 12px 0;
+        line-height: 20px;
+    }
 `;
 
 const Folder = styled.img`
@@ -59,6 +70,18 @@ const Folder = styled.img`
     width: 32px;
     height: 32px;
     margin-left: 50px;
+    @media (max-width:532px) {
+        width: 16px;
+        height: 16px;
+        margin-left: 5px;
+    }
+`;
+
+const GroupName = styled.a`
+    margin-left: 90px;
+    @media (max-width:532px) {
+        margin-left: 28px;
+    }
 `;
 
 const New = styled.p`
@@ -67,9 +90,9 @@ const New = styled.p`
     width: 100%;
     position: absolute;
     bottom: 0;
-    margin-bottom: 200px;
-    padding-bottom: 20px;
-    border-bottom: 1.5px solid lightgray;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1.5px solid lightgray;
     cursor: pointer;
 `;
 
@@ -79,12 +102,19 @@ const UnitList = styled.div`
     display: inline-block;
     left: 20%;
     padding-top: 80px;
+    @media (max-width:532px) {
+        left: 2%;
+        width: 50%;
+    }
 `;
 
 const SearchDiv = styled.div`
     position: relative;
     width: 80%;
     margin: 0 auto;
+    @media (max-width:532px) {
+        width: 90%;
+    }
 `;
 
 const SearchInput = styled.input`
@@ -96,16 +126,23 @@ const SearchInput = styled.input`
     border-radius: 15px;
     outline: none;
     border: 1.5px solid lightgray;
+    @media (max-width:532px) {
+        font-size: 13px;
+        margin: 30px 0;
+    }
 `;
 
 const SearchButton = styled.button`
     position: absolute;
     right: 15px;
-    top: 75px;
+    top: 76px;
     border: 0;
     background: none;
     outline: none;
     cursor: pointer;
+    @media (max-width:532px) {
+        top: 46px;
+    }
 `;
 
 const Unit = styled.div`
@@ -113,12 +150,20 @@ const Unit = styled.div`
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 1.5px solid lightgray;
+    @media (max-width:532px) {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
 `;
 
 const UnitTitle = styled.div`
     list-style: none;
     font-size: 25px;
     line-height: 25px;
+    @media (max-width:532px) {
+        font-size: 18px;
+        line-height: 18px;
+    }
 `;
 
 const UnitFlag = styled.div`
@@ -135,6 +180,10 @@ const UnitLength = styled.p`
     margin-right: 15px;
     font-size: 18px;
     color: gray;
+    @media (max-width:532px) {
+        font-size: 14px;
+        margin-right: 5px;
+    }
 `;
 
 const Vocabulary: React.FC = () => {
@@ -211,9 +260,9 @@ const Vocabulary: React.FC = () => {
                         <ListLi>
                             <GroupTitle>
                                 <Folder src={process.env.PUBLIC_URL+"/img/folder.png"} />
-                                <a href="MakingVocabulary.html" style={{marginLeft:'90px'}}>
+                                <GroupName href="MakingVocabulary.html">
                                     영어
-                                </a>
+                                </GroupName>
                             </GroupTitle>
                         </ListLi>
                     </ListUl>
@@ -222,12 +271,12 @@ const Vocabulary: React.FC = () => {
                     </New>
                     <ListUl style={{position:'absolute', bottom:'200px'}}>
                         <ListLi style={{marginTop:'25px'}}>
-                            <GroupTitle>
+                            {/* <GroupTitle>
                                 <Folder src={process.env.PUBLIC_URL+"/img/folder.png"} />
-                                <a href="#" style={{marginLeft:'90px'}}>
+                                <GroupName href="#">
                                     일본어
-                                </a>
-                            </GroupTitle>
+                                </GroupName>
+                            </GroupTitle> */}
                         </ListLi>
                     </ListUl>
                 </VocaList>

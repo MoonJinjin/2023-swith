@@ -9,7 +9,7 @@ const Container = styled.section`
         background: linear-gradient(-173deg, #fff8db, #fff8db 45%, #fcd121 45%, #fcd121);
     }
     @media (max-width:532px) {
-        min-height: 1500px;
+        min-height: 1600px;
         background: linear-gradient(-173deg, #fff8db, #fff8db 45%, #fcd121 45%, #fcd121);
     }
 `;
@@ -25,7 +25,7 @@ const Container1 = styled.div`
         height: 1300px;
     }
     @media (max-width:532px) {
-        height: 950px;
+        height: 1050px;
     }
 `
 
@@ -47,17 +47,19 @@ const Subject = styled.h1`
     display: inline-block;
     font-size: 300px;
     font-family: 'Nunito', sans-serif;
-    margin-top: 40vh;
+    margin-top: 270px;
     line-height: 230px;
     z-index: 5;
     color: ${(props)=> props.theme.colors.subText};
     @media (max-width:1070px) {
         font-size: 160px;
         line-height: 150px;
+        margin-top: 350px;
     }
     @media (max-width:532px) {
         font-size: 100px;
         line-height: 100px;
+        margin-top: 250px;
     }
 `;
 
@@ -126,7 +128,7 @@ const StudyTitle = styled.p`
         font-size: 90px;
     }
     @media (max-width:532px) {
-        top: 580px;
+        top: 630px;
         font-size: 90px;
     }
 `;
@@ -150,7 +152,7 @@ const StudyMent1 = styled.p`
         font-size: 40px;
     }
     @media (max-width:532px) {
-        top: 750px;
+        top: 830px;
         right: 30px;
         line-height: 40px;
         font-size: 40px;
@@ -218,7 +220,7 @@ const TimerMent1 = styled.p`
         font-size: 40px;
     }
     @media (max-width:532px) {
-        top: 200px;
+        top: 220px;
         left: 30px;
         line-height: 40px;
         font-size: 40px;
@@ -242,7 +244,7 @@ const TimerMent2 = styled.p`
         line-height: 25px;
     }
     @media (max-width:532px) {
-        top: 300px;
+        top: 330px;
         left: 30px;
         font-size: 18px;
         line-height: 25px;

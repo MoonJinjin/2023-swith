@@ -51,6 +51,9 @@ const Navli = styled.li`
     @media (max-width:1070px) {
         font-size: 14px;
     }
+    :hover {
+        box-shadow: inset 0 -10px 0 #fcd121;
+    }
 `;
 
 

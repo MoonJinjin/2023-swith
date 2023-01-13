@@ -30,6 +30,11 @@ const Left = styled.div`
     width: 50%;
     bottom: 0;
     margin: 30px;
+    @media (max-width:532px) {
+        width: 100%;
+        top: 100px;
+        margin: 0;
+    }
 `;
 
 const Right = styled.div`
@@ -38,6 +43,9 @@ const Right = styled.div`
     bottom: 0;
     right: 0;
     margin: 0 90px 30px 0;
+    @media (max-width:532px) {
+        margin: 0 0 30px 0;
+    }
 `;
 
 const VocaField = styled.div`

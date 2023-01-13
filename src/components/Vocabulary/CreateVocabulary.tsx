@@ -23,6 +23,10 @@ const InputTitle = styled.input`
     padding: 5px;
     bottom: 0;
     right: 0;
+    @media (max-width:532px) {
+        left: 20px;
+        width: 45%;
+    }
 `;
 
 const VocaField = styled.div`
